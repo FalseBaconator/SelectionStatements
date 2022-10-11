@@ -20,8 +20,20 @@ namespace SelectionStatements
             weaponName = "Pistol";
 
 
-            Console.WriteLine("Hey");
-            Console.ReadKey(true);
+            DisplayHUD();
+            TakeDamage(20); // to 80
+            SwapWeapon(1);
+            TakeDamage(20); // to 60
+            SwapWeapon(0);
+            TakeDamage(20); // to 40
+            SwapWeapon(2);
+            SwapWeapon(3);
+            TakeDamage(10); //to 30
+            SwapWeapon(4);
+            TakeDamage(10); //to 20
+            SwapWeapon(5);
+            TakeDamage(10); //to 10
+            TakeDamage(20); //to -10 to 0
         }
 
         static void TakeDamage(int dmg)
